@@ -11,7 +11,7 @@ let createUserUseCase: CreateUserUseCase
 let authenticateUserUseCase: AuthenticateUserUseCase
 let user: User;
 
-describe("Create User", () => {
+describe("Authenticate User", () => {
   beforeAll(async () => {
     usersRepository = new InMemoryUsersRepository()
     createUserUseCase = new CreateUserUseCase(usersRepository)
