@@ -24,7 +24,7 @@ describe("Create User", () => {
         name: "João",
         email: user.email,
         password: "joaopass"
-      }))
-      .rejects.toBeInstanceOf(CreateUserError)
+      })
+    ).rejects.toBeInstanceOf(CreateUserError)
   })
 })
